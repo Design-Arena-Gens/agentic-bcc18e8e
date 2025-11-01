@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0f12;
+  --foreground: #e5e7eb;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(180deg, #0e1b12 0%, #0b0f12 100%);
+}
+
+.container-safe {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-tennis-green px-4 py-2 font-semibold text-white shadow hover:opacity-90 transition;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur p-4;
+}
